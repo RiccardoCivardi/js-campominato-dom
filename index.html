@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- FONT AWESOME -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
+
+  <!-- BOOTSTRAP -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css' integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==' crossorigin='anonymous'/>
+
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SCRIPT JS -->
+  <script defer src="js/script.js"></script>
+
+  <title>Campo Minato</title>
+  
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <!-- HEADER -->
+    <header class="d-flex justify-content-between align-items-center">
+      <h1>Campo minato <i class="fa-solid fa-bomb"></i></h1>
+      <div class="w-25 me-5 d-flex flex-column align-items-center">
+        <label class="text-center mb-2" for="difficulty-level">Scegli difficoltà</label>
+        <select  class="form-select w-100 mb-3" name="" id="difficulty-level">
+          <option value="0">Facile</option>
+          <option value="1">Medio</option>
+          <option value="2">Difficile</option>
+          <option value="3">Estremo</option>
+        </select>
+        <button class="btn btn-outline-light">Gioca</button>
+      </div>
+    </header>
+    <!-- /HEADER -->
+  
+    <!-- MAIN -->
+    <main class="d-flex justify-content-center align-items-center">
+      
+      <div class="game-container d-flex flex-wrap">
+        <!-- <div class="square">
+          <span></span>
+        </div> -->
+      </div>
+
+    </main>
+    <!-- /MAIN -->
+    
+    <!-- FOOTER -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <h4> Made with <i class="fa-regular fa-heart"></i> by <i class="fa-solid fa-user-ninja"></i></h4>
+    </footer>
+    <!-- /FOOTER -->
+
+  </div>
+  
+</body>
+</html>

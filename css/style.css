@@ -1,0 +1,70 @@
+/*** GENERAL STYLES ***/
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+  height: 20%;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: deeppink;
+  margin-left: 10px;
+}
+
+/* MAIN */
+
+main {
+  height: 70%;
+  background-color: deeppink;
+}
+
+.game-container {
+  width: 450px;
+}
+
+.square {
+  aspect-ratio: 1/1;
+  border: 2px solid deeppink;
+  background-color: white;
+  cursor: pointer;
+}
+
+.square.click {
+  background-color: black;
+  color: deeppink;
+}
+
+
+/* FOOTER */
+
+footer {
+  height: 10%;
+  background-color: black;
+  color: white;
+}
+
+footer i {
+  font-size: 2rem;
+  color: deeppink;
+}
+
