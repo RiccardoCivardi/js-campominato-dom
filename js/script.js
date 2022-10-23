@@ -68,7 +68,7 @@ function startGame() {
 
   // genero le bombe in modo casuale e univoco
   startGameBombs = generateBombs(squaresNumber); 
-  console.log(startGameBombs);
+  /* -------------> */ // console.log(startGameBombs);
 
 }
 
@@ -164,14 +164,21 @@ function clickSquare() {
     this.classList.add('click'); 
     // incremento il punteggio del giocatore
     score++;
+
+    //impedisco il click sulla cella gia cliccata
+    this.removeEventListener('click', clickSquare);
   }
   
   // creo html collection di tutti i quadrati per trovare il totale
    const totalSquares = document.getElementsByClassName('square');
    // creo punteggio massimo
    const maxScore = totalSquares.length - gameBombsDefault;
-   // scrivo il punteggio in pagina
-   playScore.innerText = `PUNTEGGIO ${score} di ${maxScore}`
+   // creo variabile per messaggio punti
+   let msgScore = '';  
+   // assegno a msgScore punto/i differenziando singolare e plurale nella frase
+   (score === 1) ? msgScore = 'punto' : msgScore = 'punti';
+   // stampo il punteggio
+   playScore.innerText = `Hai totalizzato ${score} ${msgScore} di ${maxScore}`
   ;
   
   // se il punteggio del giocatore arriva al massimo
